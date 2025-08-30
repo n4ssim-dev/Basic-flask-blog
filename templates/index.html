@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles.css')}}">
+</head>
+<body>
+<div class="wrapper">
+    <div class="top">
+        <div class="title">
+            <h1>Welcome to our personal blog !</h1>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="card">
+            <h2>Discover our posts</h2>
+            <p class="text">
+                This is our little corner of the internet where we share thoughts, stories, and more.
+            </p>
+            <a href="{{ url_for('get_all_blogs') }}">Browse our blogs →</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© Tomato Copyright {{year}}.</p>
+</footer>
+</body>
+</html>
